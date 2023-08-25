@@ -1,8 +1,8 @@
 <?php
 
-require('./Database.php')
+require('./Database.php');
 
-
+var_dump($_ENV);
 ?>
 
 <!DOCTYPE html>
