@@ -6,7 +6,7 @@ class Database
     public function __construct(){
         
 
-        $this->connection = new PDO('mysql:host=' . DATABASE_HOST . ';dbname='. DATABASE_NAME .';charset=utf8mb4', DATABASE_USER, DATABASE_PASSWORD);
+        $this->connection = new PDO('mysql:host=' . MYSQLHOST . ';dbname='. MYSQLDATABASE .';charset=utf8mb4', MYSQLUSER, MYSQLPASSWORD);
     }
     public function query($query)
     {
