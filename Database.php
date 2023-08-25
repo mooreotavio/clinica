@@ -4,9 +4,9 @@ class Database
 {
     public $connection;
     public function __construct(){
-        $dsn = "mysql:host=$MYSQLHOST;port=$MYSQLPORT;dbname=$MYSQLDATABASE;password=$MYSQLPASSWORD;user=$MYSQLUSER";
+        
 
-        $this->connection =  new PDO($dsn, 'root');
+        $this->connection = new PDO('mysql:host=' . DATABASE_HOST . ';dbname='. DATABASE_NAME .';charset=utf8mb4', DATABASE_USER, DATABASE_PASSWORD);
     }
     public function query($query)
     {
