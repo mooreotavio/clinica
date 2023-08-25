@@ -4,7 +4,7 @@ class Database
 {
     public $connection;
     public function __construct(){
-        $dsn = "mysql:host=localhost;port=3306;dbname=myapp;charset=utf8mb4";
+        $dsn = "mysql:host=containers-us-west-79.railway.app;port=5544;dbname=railway";
 
         $this->connection =  new PDO($dsn, 'root');
     }
