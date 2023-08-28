@@ -1,3 +1,11 @@
 <?php
+    $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
+    $controller = match($uri){
 
-require('router.php');
+        '/' => 'controllers/index.php',
+        '/pacientes' => 'controllers/pacientes.php',
+        '/medicos' => 'controllers/medicos.php',
+        default => 'views/404.view.php',
+    };
+    
+    require $controller;
