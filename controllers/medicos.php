@@ -18,6 +18,15 @@ $medicos = $db->query("select * from medicos");
 
 <body>
     <main class="container">
+    <nav>
+        <ul>
+            <li><strong>Clínica</strong></li>
+        </ul>
+        <ul>
+            <li><a href="/pacientes" class="contrast">Pacientes</a></li>
+            <li><a href="/medicos" class="secondary">Médicos</a></li>
+        </ul>
+    </nav>
         <table>
             <tr>
                 <th>Nome</th>
