@@ -1,4 +1,5 @@
 <?php
+
 require('./Database.php');
 
 $db = new Database();

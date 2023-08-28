@@ -1,9 +1,3 @@
-<?php
-
-require('./Database.php')
-
-    ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
