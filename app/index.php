@@ -15,8 +15,10 @@
             <li><strong>Clínica</strong></li>
         </ul>
         <ul>
-            <li><a href="/pacientes" class="contrast">Pacientes</a></li>
-            <li><a href="/medicos" class="contrast">Médicos</a></li>
+            <li><a href="/pacientes.php" class="contrast">Pacientes</a></li>
+            <li><a href="/medicos.php" class="contrast">Médicos</a></li>
+            <li><a href="/create_medico.php" class="contrast">Adicionar Médico</a></li>
+            <li><a href="/create_paciente.php" class="contrast">Adicionar Paciente</a></li>
         </ul>
     </nav>
 </body>

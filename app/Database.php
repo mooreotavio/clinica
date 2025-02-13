@@ -6,7 +6,7 @@ class Database
     public function __construct(){
         
 
-        $this->connection = new PDO("mysql:host=" . $_ENV['MYSQLHOST'] . ";port=" . $_ENV['MYSQLPORT'] . ";dbname=". $_ENV['MYSQLDATABASE'] .";charset=utf8mb4", $_ENV['MYSQLUSER'], $_ENV['MYSQLPASSWORD']);
+        $this->connection = new PDO("mysql:host=" . $_ENV['MYSQL_HOST'] . ";dbname=". $_ENV['MYSQL_DATABASE'] .";charset=utf8mb4", $_ENV['MYSQL_USER'], $_ENV['MYSQL_PASSWORD']);
     }
     public function query($query)
     {
