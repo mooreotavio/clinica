@@ -1,6 +1,6 @@
 services:
   www:
-    image: clinica
+    build: .
     ports:
       - "80:80"
     volumes:
